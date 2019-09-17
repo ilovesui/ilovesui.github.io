@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    body {
+        margin: 0;
+    }
+    .container {
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 10px;
+        background-color: midnightblue;
+    }
+    .container h1 {
+        text-align: center;
+        color: whitesmoke;
+        margin: 0;
+        padding: 20px;
+    }
+    #bartending {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #bartending .card {
+        width: 240px;
+        margin: 10px;
+        padding: 10px;
+        background-color: lightskyblue;
+    }
+    #bartending .card img {
+        width: 100%;
+    }
+    #bartending .card p {
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+    .text_color {
+        color: whitesmoke;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>常見調酒介紹</h1>
+        <div id="bartending">
+        </div>
+        <p class="text_color"> ---上課練習用網頁---資料來源: <a href="https://1.bp.blogspot.com/-cAktq1NVdLY/WeIir3A8OII/AAAAAAAAQRM/Od5ErDQzxUcDbxg3O4GSnmM7eN4AeJxgwCLcBGAs/s1600/Pink_Lady_cocktail_drinks_recipe.jpg" target="_blank" style="text-decoration: none" class="text_color" title="咖尼馬管家的筆記|夜店常見調酒介紹">咖尼馬管家的筆記</a></p>
+    </div>
+
+
+    <script>
+        
+        var Bartending = document.querySelector("#bartending");
+
+        var bartending_group = [
+            bartending01 = {
+                img: "https://2.bp.blogspot.com/-gB6jaLg1JgQ/WeHw2dHh6aI/AAAAAAAAQOw/93CC64Lbu4wYfdap4vfEk_0YX5xZ603VgCLcBGAs/s400/1500x861martini.jpg",
+                title: "馬丁尼 Martini(35%~40%)",
+                main: "外觀看起來無色，琴酒+苦艾酒，濃度高不甜"
+            },
+            bartending02 = {
+                img: "https://1.bp.blogspot.com/-eMmAh0YHDOc/WeIT8QSoI1I/AAAAAAAAQPU/dwEb9ijCpyYzj4lGCu2DrvL4-nFBcBZJgCLcBGAs/s400/classic-bloody-mary-720x720-recipe.jpg",
+                title: "血腥瑪麗 Bloody Mary(10%~15%)",
+                main: "伏特加 +番茄汁+檸檬汁+辣醬+鹽，主要成分是番茄汁，喝起來是鹹的"
+            },
+            bartending03 = {
+                img: "https://3.bp.blogspot.com/-DQdHxFszDN8/WeIVkXawdII/AAAAAAAAQPk/D4fNKfx9oMo1hJ60ypX1PMhvKZz5ZgJRACLcBGAs/s400/cosmopolitan-cocktail-56-big_%25E5%2589%25AF%25E6%259C%25AC.jpg",
+                title: "柯夢波丹 Cosmopolitan(10%~ 15%)",
+                main: "伏特加+澄酒+檸檬汁+蔓越莓汁，酸甜口感像蔓越莓汁"
+            },
+            bartending04 = {
+                img: "https://1.bp.blogspot.com/-cAktq1NVdLY/WeIir3A8OII/AAAAAAAAQRM/Od5ErDQzxUcDbxg3O4GSnmM7eN4AeJxgwCLcBGAs/s400/Pink_Lady_cocktail_drinks_recipe.jpg",
+                title: "粉紅佳人 Pink Lady(10%~15%)",
+                main: "琴酒+紅石榴糖漿，與柯夢波丹一樣都是熱門的粉紅色調酒",
+            },
+            bartending05 = {
+                img: "https://2.bp.blogspot.com/-I9tFNeFKglc/WeIV8mt1qoI/AAAAAAAAQPo/hoim794K9N8P1iWex0fZgORLhSAVh00OACLcBGAs/s400/Sex-On-The-Beach-Cocktail-Recipe-2.jpg",
+                title: "性感海灘 Sex on the beach(20%~25%)",
+                main: "伏特加+水蜜桃酒+蔓月越莓汁+鳳梨汁(或澄汁)，喝起來像酒精濃度高的綜合果汁",
+            },
+            bartending06 = {
+                img: "https://4.bp.blogspot.com/-8rrGT9L4D1g/WeIey5Dd-2I/AAAAAAAAQQo/zv_sDmYevDoNBopd-daQtZdfgRIQWJzRgCLcBGAs/s400/sea-breeze.jpeg",
+                title: "海風 Sea Breeze(10%~15%)",
+                main: "伏特加+葡萄柚汁+蔓越梅汁+檸檬，適合不常喝酒的人",
+            },
+            bartending07 = {
+                img: "https://1.bp.blogspot.com/-pTMfnzseQ98/WeIWpxoNZFI/AAAAAAAAQP0/n3P60AOSgF0ggOSt09LrsQMHZh4jQU-EQCLcBGAs/s400/LongIslandIcedTea_4x3-medium-landscape-200.jpg",
+                title: "長島冰茶 Long Island Iced Tea(30%~35%)",
+                main: "因外觀看起來像紅茶而得名，蘭姆酒+伏特加+琴酒+龍舌蘭+白柑香酒+檸檬汁+可樂，顏色愈深表示加了愈多可樂，濃度也就愈低；反過來說，顏色愈淺的濃度就會愈高。，濃度高後勁強，女生請注意!",
+            },
+            bartending08 = {
+                img: "https://3.bp.blogspot.com/-3tZRWyTrvcw/WeIXNljx0tI/AAAAAAAAQP4/RJLb5BLo7xcstUzoK_-euMie6C0nEuICQCLcBGAs/s400/B52-shot-720sq.jpg",
+                title: "B52轟炸機 B52 Stratofortress (30%)",
+                main: "咖啡酒 +奶酒+伏特加，一口分層酒",
+            },
+            bartending09 = {
+                img: "https://3.bp.blogspot.com/-WQAUgmVGAEk/WeIX7NTgQ-I/AAAAAAAAQQA/5Gn0u8UNsik6NWf-34iFsfX9OBtViHeeQCLcBGAs/s400/shutterstock_255607225.jpg",
+                title: "黑色俄羅斯Black Russian(25%~30%)",
+                main: "伏特加+ 咖啡酒，酒味撲鼻明顯",
+            },
+            bartending10 = {
+                img: "https://1.bp.blogspot.com/-8iP35HRqfB8/WeIYQtFkAiI/AAAAAAAAQQE/D0aFAf-6dagdkvQHvBUx-ibEdprx-zsRgCLcBGAs/s400/WhiteRussian720FB.jpg",
+                title: "白俄羅斯 White Russian(25%~30%)",
+                main: "伏特加+ 咖啡酒+鮮奶油(牛奶)，有點像奶酒",
+            },
+            bartending11 = {
+                img: "https://3.bp.blogspot.com/-q7a-dqc5Qtg/WeIY3AMpjRI/AAAAAAAAQQM/-Qow97yh9zoF3y45-lIHbrkxr0PPv0M5ACLcBGAs/s400/XMY_8143.jpg",
+                title: "藍色夏威夷 Blue Hawaii(10~15%)",
+                main: "藍柑香酒+ 鳳梨汁+柳橙汁+檸檬汁，可以當作外觀藍色的水果酒，濃度低，適合不常喝酒的人",
+            },
+            bartending12 = {
+                img: "https://1.bp.blogspot.com/-i41-g8PoISU/WeIZb1GygqI/AAAAAAAAQQY/FcO_GYzlEvAJtf1ioyn77vCpZ6xMV9JcgCLcBGAs/s400/1500x861recipe-between-the-sheets-cocktail-recipe.jpg",
+                title: "床第之間 Between The Sheets(30~40%)",
+                main: "白蘭地+ 蘭姆酒+ 君度橙酒+ 檸檬汁，濃度高，女生請注意!",
+            },
+            bartending13 = {
+                img: "https://4.bp.blogspot.com/-3gdXtyPySKQ/WeIZ6LR3xDI/AAAAAAAAQQc/8KT6Bt6mdbUcXRMkKaXAlYTL9p3alDePgCLcBGAs/s400/mai-tai-suffolk-arms.w710.h473.jpg",
+                title: "邁泰 Mai Tai(20%~25%)",
+                main: "蘭姆酒+白柑橘香甜酒+萊姆汁+鳳梨汁+杏仁糖漿，不要以為只是普通的綜合果汁，濃度算高，知名的熱帶水果酒",
+            },
+            bartending14 = {
+                img: "https://2.bp.blogspot.com/-uNHLR0oizCs/WeIfb8By9tI/AAAAAAAAQQw/YnBskrSnz9gcF-gASKo9YmX5pm0AAy3ewCLcBGAs/s400/horizontal.jpg",
+                title: "鹽狗 Salty Dog (15%)",
+                main: "伏特加+ 葡萄柚汁+鹽口杯",
+            },
+            bartending15 = {
+                img: "https://3.bp.blogspot.com/-zBdmd_a4KfQ/WeIm0e1f-VI/AAAAAAAAQSA/-ihoKSnQmlEg7tBLQ_Sk6vhiNEbm5BF9wCLcBGAs/s400/6a00e554e5d8fe883301b7c7afb65c970b-600wi.jpg",
+                title: "戴克利 Daiquiri(20%~25%)",
+                main: "蘭姆酒+萊姆汁+糖漿，酸中帶甜，夏天時常做成類似冰沙的霜凍式調酒",
+            },
+            bartending16 = {
+                img: "https://2.bp.blogspot.com/-c5qa7enCEKg/WeIxzykZayI/AAAAAAAAQTc/AdNQkIAccOMsAu5-42YADIFY1xhnXUpJACLcBGAs/s400/c04f03_e0c9ca085a854a38b1596cce202831b2-mv2.jpg",
+                title: "瑪格莉特 Margarita(15%~20%)",
+                main: "也有被稱作雞尾酒之后，龍舌蘭 +橙酒+檸檬汁+鹽口杯，適合當餐前酒",
+            },
+            bartending17 = {
+                img: "https://2.bp.blogspot.com/-dfexR9Fg17I/WeIsjEhRISI/AAAAAAAAQS8/drcJ68qGsms8du-BNQTGsZgcQWaa_SXnQCLcBGAs/s400/kamikaze-cocktail.jpg",
+                title: "神風特攻隊 Kamikaze(20%~25%)",
+                main: "伏特加+白橙皮酒+萊姆汁，酸澀與酒味明顯，口感辛辣，另外它並非由日本人所創，而是美國調酒師因神風特攻隊帶給美國人的感覺而得其名",
+            },
+            bartending18 = {
+                img: "https://1.bp.blogspot.com/-bNx2Wh4rM_E/WeORBAPEALI/AAAAAAAAQVI/_RrXyQbwViUDFeNE2nwBl4UiKoN8FEnmgCLcBGAs/s400/19367658_671301966413121_171827876142776320_n.jpg",
+                title: "國王谷 King's Valley(30%~35%)",
+                main: "威士忌+君度橙酒+萊姆汁+藍柑橘香甜酒，上田和男在1986年所創的優勝作品，是一杯沒有使用綠色的材料，而調出綠色成品的調酒，清爽帶有威士忌嗆辣感",
+            },
+            bartending19 = {
+                img: "https://4.bp.blogspot.com/-9hTjMJNg-zU/WeIgGaV2XdI/AAAAAAAAQQ8/ptOhVXNzMkUjVV3swBOZzfxIKq13vZUDQCLcBGAs/s400/tequila-sunrise.jpg",
+                title: "龍舌蘭日出 Tequila Sunrise(10~15%)",
+                main: "龍舌蘭+大量柳橙汁+紅石榴糖漿，如有酒味的柳橙汁",
+            },
+            bartending20 = {
+                img: "https://4.bp.blogspot.com/-6AYEoJEczx0/WeItvzc_TAI/AAAAAAAAQTI/8v19rk00QQozquufWSXux1sXT9hFoUJjACLcBGAs/s400/Power-Screwdriver-Recipe-4-630-1-630x771.jpg",
+                title: "螺絲起子 Screwdriver (10%~15%)",
+                main: "伏特加+柳橙汁，和龍舌蘭日出類似，都是酒味口感的柳橙汁",
+            },
+        ]
+
+        for (let i = 0; i < bartending_group.length; i++) {
+            const bartending = bartending_group[i];
+            
+            Bartending.innerHTML += `<div class="card">
+                <img src="${bartending.img}" alt="${bartending.title}">
+                <h2>${bartending.title}</h2>
+                <p>${bartending.main}</p>
+            </div>`
+        }
+    
+    </script>
+    
+</body>
+</html>
