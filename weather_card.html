@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+
+    <style>
+    
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            max-width: 1140px;
+            margin: auto;
+        }
+        .weather_group {
+            background-color:aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+        .weather_group .weather_card {
+            background-color: cornflowerblue;
+            width: 30%;
+            min-width: 350px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+        .weather_group .weather_card #weather {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            position: relative;
+        }
+        .weather_group .weather_card .weather_content {
+            width: 250px;
+            color: aliceblue;
+            padding: 20px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+        }
+        .weather_group .weather_card h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .weather_group .weather_card p {
+            margin: 0;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .cloud:hover .cloud_a {
+        animation-name: x_translate_r;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .cloud:hover .cloud_b {
+        animation-name: x_translate_l;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .cloud .cloud_a {
+        position: absolute;
+        left: 35%;
+        bottom: 30%;
+        font-size: 40px;
+        color: lightgray;
+        
+    }
+    .cloud .cloud_b {
+        position: absolute;
+        left: 15%;
+        bottom: 25%;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    @keyframes x_translate_r {
+        from {
+            transform: translateX(20%);
+            opacity: 0;
+        }
+        to {transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes x_translate_l {
+        from {
+            transform: translateX(-20%);
+            opacity: 0;
+        }
+        to {transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .sunny {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sunny .sun {
+        font-size: 60px;
+        color: gold;
+    }
+    .sunny:hover .sun {
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .sunny_cloud {
+        position: relative;
+    }
+    .sunny_cloud .cloud_sun {
+        position: absolute;
+        left: 25%;
+        bottom: 40%;
+        font-size: 35px;
+        color: gold;
+    }
+    .sunny_cloud .cloud_a {
+        position: absolute;
+        left: 35%;
+        bottom: 20%;
+        font-size: 40px;
+        color: lightgray;
+        
+    }
+    .sunny_cloud .cloud_b {
+        position: absolute;
+        left: 15%;
+        bottom: 25%;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    .sunny_cloud:hover .cloud_a {
+        animation-name: x_translate_r;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .sunny_cloud:hover .cloud_b {
+        animation-name: x_translate_l;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .sunny_cloud:hover .cloud_sun {
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .rainny {
+        position: relative;
+    }
+    .rainny .cloud_a {
+        position: absolute;
+        left: 35%;
+        bottom: 45%;
+        font-size: 40px;
+        color: lightgray;
+    }
+    .rainny .cloud_b {
+        position: absolute;
+        left: 15%;
+        bottom: 40%;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    .rainny .fa-map-marker {
+        transform: rotate(190deg);
+        font-size: 12px;
+        color: lightskyblue;
+    }
+    .rainny .drop_a {
+        position: absolute;
+        bottom: 20%;
+        left: 25%;
+    }
+    .rainny .drop_b {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+    }
+    .rainny .drop_c {
+        position: absolute;
+        bottom: 16%;
+        left: 70%;
+    }
+    .rainny:hover .cloud_a {
+        animation-name: x_translate_r;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .rainny:hover .cloud_b {
+        animation-name: x_translate_l;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+    .rainny:hover .drop_a {
+        animation-name: opacity;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .rainny:hover .drop_b {
+        animation-name: opacity;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .rainny:hover .drop_c {
+        animation-name: opacity;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="weather_group">
+        </div>
+    </div>
+
+
+    <script>
+    
+    fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&format=JSON")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+
+            var weather_group = myJson.records.location;
+            console.log(weather_group);
+            
+            for (let i = 0; i < weather_group.length; i++) {
+                const weatherGroup = weather_group[i];
+                
+                console.log(weatherGroup.locationName);
+                
+                var weather_value = weatherGroup.weatherElement;
+                console.log("天氣",weather_value[0].time[0].parameter.parameterName);
+                console.log("降雨機率",weather_value[1].time[0].parameter.parameterName,"%");
+                console.log("最低溫度",weather_value[2].time[0].parameter.parameterName,"℃");
+                console.log("最高溫度",weather_value[4].time[0].parameter.parameterName,"℃");
+                
+                var weather_Group = document.querySelector(".weather_group");
+                
+                weather_Group.innerHTML+=`<div class="weather_card">
+                <div class="weather_content"><h2>${weatherGroup.locationName}</h2>
+                    <p class="weather">${weather_value[0].time[0].parameter.parameterName}</p>
+                    <p>${weather_value[2].time[0].parameter.parameterName}℃ ~ ${weather_value[4].time[0].parameter.parameterName}℃</p>
+                    <p>降雨機率${weather_value[1].time[0].parameter.parameterName}%</p></div><div class="weather_icon"></div></div>`;
+
+            }
+            
+            var weatherIcon = document.querySelectorAll(".weather_icon");
+
+            var Weather = document.querySelectorAll(".weather");
+            
+            for (let i = 0; i < Weather.length; i++) {
+                const WeatherE = Weather[i];
+                const WeatherI = weatherIcon[i];
+                
+                console.log(WeatherE.textContent);
+                console.log(WeatherI);
+
+                if (WeatherE.textContent === "晴時多雲"||WeatherE.textContent === "多雲時晴") {
+                    WeatherI.innerHTML=`<div id="weather" class="sunny_cloud">
+                        <i class="fas fa-sun cloud_sun"></i>
+                        <i class="fas fa-cloud cloud_a"></i>
+                        <i class="fas fa-cloud cloud_b"></i>
+                    </div>`
+                } else if (WeatherE.textContent === "多雲"||WeatherE.textContent === "多雲時陰"||WeatherE.textContent === "陰時多雲"||WeatherE.textContent === "陰天"){
+                    WeatherI.innerHTML=`<div id="weather" class="cloud">
+        <i class="fas fa-cloud cloud_a"></i>
+        <i class="fas fa-cloud cloud_b"></i>
+    </div>`
+                } else if (WeatherE.textContent === "晴天"){
+                    WeatherI.innerHTML=`<div id="weather" class="sunny">
+                        <i class="fas fa-sun sun"></i>
+                    </div>`
+                } else {
+                    WeatherI.innerHTML=`<div id="weather" class="rainny">
+                        <i class="fas fa-cloud cloud_a"></i>
+                        <i class="fas fa-cloud cloud_b"></i>
+                        <i class="fas fa-map-marker drop_a"></i>
+                        <i class="fas fa-map-marker drop_b"></i>
+                        <i class="fas fa-map-marker drop_c"></i>
+                    </div>`}
+            }                
+        });
+        
+    
+    </script>
+</body>
+</html>
