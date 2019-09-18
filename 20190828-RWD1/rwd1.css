@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.font {
+    font-family: "Roboto","Arial","LiHei Pro","Noto Sans JP","Noto Sans TC","微軟正黑體", sans-serif;
+    font-size: 40px;
+    text-align: justify;
+}
+#navbar {
+    background-color: honeydew;
+    width: 320px;
+    height: 100vh;
+    display: inline-block;
+}
+#logo {
+    width: 320px;
+    padding: 20px;
+}
+#logo .logos {
+    width: 280px;
+}
+#menu .menu {
+    display: none;
+}
+#menu .list {
+    width: 320px;
+    padding: 20 0px;
+    line-height: 80px;
+}
+#menu .list .lia {
+    padding-left: 62px;
+    letter-spacing: 12px;
+    transition: 0.7s;
+}
+#menu .list .lib {
+    padding-left: 62px;
+    letter-spacing: 5px;
+    transition: 0.7s;
+}
+#menu .list .lic {
+    padding-left: 62px;
+    letter-spacing: 32px;
+    transition: 0.7s;
+}
+.link {
+    color: mediumslateblue;
+}
+#menu .list .lia:hover {
+    background-color: lemonchiffon;
+}
+#menu .list .lib:hover {
+    background-color: lemonchiffon;
+}
+#menu .list .lic:hover {
+    background-color: lemonchiffon;
+}
+#main {
+    width: calc( 100% - 320px);
+    height: 100vh;
+    background-color: lavender;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .center {
+    width: 960px;
+    height: 720px;
+    background-color: honeydew;
+    padding: 24px 0;
+    display: flex;
+}
+#main .center .photo1 {
+    width: 30%;
+    height: 100%;
+    margin: 0 2.5%;
+    position: relative;
+}
+#main .center .photo2 {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+#main .center .photo3 {
+    width: 30%;
+    height: 100%;
+    margin: 0 2.5%;
+    position: relative;
+}
+.center .photo1 #bp1 {
+    background-image: url("./img/blood_platelet.jpg");
+    background-position: center;
+    position: absolute;
+}
+#main .center .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#main .center #mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .center .imgi {
+    width: 90%;
+    height: 95%;
+    background-size: cover;
+}
+.center .photo1 #bp2 {
+    background-image: url("./img/blood_platelet2.jpg");
+    background-position: center;
+    position: absolute;
+    transition: 1.5s;
+}
+#main .center .photo1:hover #bp2 {
+    opacity: 0;
+}
+.center .photo2 #rbc1 {
+    background-image: url("./img/red_blood_cell.jpg");
+    background-position: center;
+    position: absolute;
+}
+.center .photo2 #rbc2 {
+    background-image: url("./img/red_blood_cell2.jpg");
+    background-position: center;
+    position: absolute;
+    transition: 1.5s;
+}
+#main .center .photo2:hover #rbc2 {
+    opacity: 0;
+}
+.center .photo3 #wbc1 {
+    background-image: url("./img/white_blood_cell.jpg");
+    background-position: center;
+    position: absolute;
+}
+.center .photo3 #wbc2 {
+    background-image: url("./img/white_blood_cell2.jpg");
+    background-position: center;
+    position: absolute;
+    transition: 1.5s;
+}
+#main .center .photo3:hover #wbc2 {
+    opacity: 0;
+}
+
+@media (max-width: 1280px) {
+    #navbar {
+        width: 230px;
+    }
+    #logo {
+        width: 230px;
+    }
+    #logo .logos {
+        width: 190px;
+    }
+    #menu .list {
+        width: 230px;
+        font-size: 32px;
+    }
+    #menu .list .lia {
+        padding-left: 42px;
+        letter-spacing: 7px;
+    }
+    #menu .list .lib {
+        padding-left: 42px;
+        letter-spacing: 2px;
+    }
+    #menu .list .lic {
+        padding-left: 42px;
+        letter-spacing: 21px;
+    }
+    #main {
+        width: calc(100% - 230px);
+    }
+    #main .center {
+        width: 500px;
+        height: 400px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #main .center .photo1 {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    #main .center .photo2 {
+        width: calc(50% - 5px);
+        height: calc(50% - 10px);
+        margin-top: 10px;
+    }
+    #main .center .photo3 {
+        width: calc(50% - 5px);
+        height: calc(50% - 10px);
+        margin: 10px 0 0 0;
+    }
+    .center .photo1 #mask {
+        padding: 2.5%;
+    }
+    #main .center .photo1 .imgi {
+        background-size: contain;
+    }
+    #main .center .imgi {
+        height: 93%;
+        background-repeat: no-repeat;
+    }
+    #main .center .photo2 .img {
+        background-position: top;
+    }
+    #main .center .photo2 .imgi {
+        background-position: top;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo {
+        width: 148px;
+        height: 112px;
+        padding: 20px 10px
+    }
+    #logo .logos {
+        width: 128px;
+        height: 72px;
+    }
+    #menu .list {
+        width: unset;
+        line-height: 112px;
+        font-size: 19px;
+        padding-right: 3px;
+        display: flex;
+    }
+    #menu .list .lia {
+        padding: 0 3px;
+        letter-spacing: 1px;
+    }
+    #menu .list .lib {
+        padding: 0 3px;
+        letter-spacing: 0px;
+    }
+    #menu .list .lic {
+        padding: 0 3px;
+        letter-spacing: 2px;
+    }
+    #main {
+        width: 100%;
+        height: calc(100vh - 132px)
+    }
+    #main .center {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+    }
+    #main .center .imgi {
+        height: 90%;
+    }
+    #main .center .photo3 .img {
+        background-position: top;
+    }
+    #main .center .photo3 .imgi {
+        background-position: top;
+    }
+}
+
+@media (max-width: 375px) {
+    #navbar {
+        width: 100%;
+        height: 67px;
+        position: relative;
+        z-index: 17;
+    }
+    #logo {
+        width: 110px;
+        height: 67px;
+        padding: 5px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #logo .logos {
+        width: 100px;
+        height: 57px;
+    }
+    #menu .menu {
+        display: unset;
+        font-size: 40px;
+        color: lavender;
+        padding: 13.5px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    #menu .list {
+        display: none;
+        background-color: honeydew;
+        width: max-content;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+    #menu .list .lia {
+        padding-left: 10px;
+        letter-spacing: 3px;
+    }
+    #menu .list .lib {
+        padding-left: 10px;
+        letter-spacing: 1px;
+    }
+    #menu .list .lic {
+        padding-left: 10px;
+        letter-spacing: 10px;
+    }
+    #menu:hover .list {
+        display: block;
+    }
+    #main {
+        width: 100%;
+        height: 600px;
+    }
+    #main .center {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    #main .center .photo1 {
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+    #main .center .img {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+    }
+    #main .center .imgi {
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #main .center #mask {
+        padding: 0;
+    }
+    #main .center .photo2 {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+    #main .center .photo3 {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+}
+
+#front #backimg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/hataraku_saibo.png");
+    background-size: cover;
+    background-position: center top;
+}
+#front #backimg .box {
+    width: 100%;
+    height: 10vh;
+    background-color: whitesmoke;
+    animation-name: flip;
+    animation-duration: 0.5s;
+    transform-origin: 50% 100%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+#backimg .bb {
+    animation-delay: 0.4s
+}
+#backimg .cc {
+    animation-delay: 0.8s
+}
+#backimg .dd {
+    animation-delay: 1.2s
+}
+#backimg .ee {
+    animation-delay: 1.6s
+}
+#backimg .ff {
+    animation-delay: 2s
+}
+#backimg .gg {
+    animation-delay: 2.4s
+}
+#backimg .hh {
+    animation-delay:2.8s
+}
+#backimg .ii {
+    animation-delay: 3.2s
+}
+#backimg .jj {
+    animation-delay: 3.6s
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0);
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+}
+
+#front {
+    width: 100%;
+    height: 100vh;
+    animation-name: out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 4.5s;
+}
+
+@keyframes out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        height: 0;
+    }
+}
+
+#show {
+    animation-name: in;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
