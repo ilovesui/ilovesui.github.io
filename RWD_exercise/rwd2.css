@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.font {
+    font-family: "Roboto","Arial","LiHei Pro","Noto Sans JP","Noto Sans TC","微軟正黑體", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: justify;
+}
+.w100 {
+    width: 100%;
+}
+#navbar {
+    background-color: green;
+    position: fixed;
+    top: 0;
+    z-index: 17;
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    height: 54px;
+}
+#logo .logos {
+    height: 54px;
+}
+#menu {
+    width: auto;
+}
+#menu .menu {
+    display: none;
+}
+#menu .list {
+    display: flex;
+}
+#li {
+    width: max-content;
+    padding: 0 9px;
+    line-height: 54px;
+}
+.textc {
+    color: honeydew;
+}
+#menu .list .d {
+    width: 60px;
+    text-align: center;
+}
+#menu .list #li {
+    transition: 1s;
+}
+#menu .list .a:hover {
+    background-color: yellowgreen;
+}
+#menu .list .b:hover {
+    background-color: yellowgreen;
+}
+#menu .list .c:hover {
+    background-color: yellowgreen;
+}
+#menu .list .d:hover {
+    background-color: yellowgreen;
+}
+#banner {
+    height: calc(100vh - 54px);
+    margin-top: 54px;
+}
+.titleimg {
+    background-image: url("./img/in hand.jpg");
+}
+.imgcover {
+    background-size: cover;
+    background-position: center;
+}
+.imgcontain {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#mask {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.h100 {
+    height: 100%;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+.padding-t54 {
+    padding-top: 54px;
+}
+.padding-b54 {
+    padding-bottom: 54px;
+}
+#main1 {
+    height: calc(100vh + 54px);
+    background-color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#photo1 {
+    width: 40%;
+    margin-right: 5%;
+}
+#text1 {
+    width: 40%;
+}
+.vh100 {
+    height: 100vh;
+}
+#main2 {
+    background-image: url("./img/animals.jpg");
+    background-position: top;
+    padding-top: 50vh;
+}
+.parallax {
+    background-attachment: fixed;
+}
+#main2 #mask {
+    background-color: rgba(0, 40, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text2 {
+    width: 70%;
+}
+.vh50 {
+    height: 50vh;
+}
+.padding-lf15 {
+    padding: 0 15%;
+}
+.w3-1 {
+    width: 300px;
+}
+#main3 {
+    height: auto;
+    background-color: mediumseagreen;
+    padding: 54px;
+    display: flex;
+    justify-content: center;
+}
+#M {
+    margin: 0 20px;
+}
+#L .topimg {
+    background-image: url("./img/yamap.jpg");
+    background-position: 30%;
+}
+#M .topimg {
+    background-image: url("./img/lady.jpg");
+    background-position: 60%;
+}
+#R .topimg {
+    background-image: url("./img/man.jpg");
+    background-position: 15%;
+}
+.text3 {
+    background-color: rgba(0, 10, 0, 0.5);
+    line-height: 20px;
+    padding: 20px;
+}
+#main4 {
+    background-color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text4 {
+    width: 400px;
+    margin-right: 50px;
+}
+.texta-c {
+    text-align: center;
+}
+.texta-r {
+    text-align: right;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#photo4 {
+    width: 400px;
+}
+.dramaphoto {
+    background-image: url("./img/dramaphoto.jpg");
+}
+#text5 {
+    display: flex;
+    align-items: center;
+}
+.text5 {
+    background-color: rgba(0, 20, 0, 0.6);
+    font-size: 18px;
+    padding: 0;
+}
+#textend {
+    height: auto;
+    background-color: rgb(130, 180, 100);
+    padding: 20px 50px;
+    font-size: 15px;
+    line-height: 30px;
+}
+#button {
+    background-color: darkgreen;
+    width: 50px;
+    height: 50px;
+    border: 1px solid honeydew;
+    border-radius: 27px;
+    position: fixed;
+    bottom: 80px;
+    right: 4px;
+    line-height: 54px;
+    z-index: 7;
+}
+#footer {
+    background-color: darkgreen;
+    display: flex;
+}
+#statement {
+    width: calc(100% - 170px);
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    #navbar {
+        height: 54px;
+    }
+    #menu {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu .menu {
+        display: block;
+        font-size: 34px;
+        padding: 10px;
+        color: honeydew;
+    }
+    #menu:hover .list {
+        display: block;
+    }
+    #menu .list {
+        display: none;
+        float: right;
+        flex-direction: column;
+        align-items: center;
+        background-color: green;
+        width: 60px;
+    }
+    #main1 {
+        height: max-content;
+        flex-direction: column-reverse;
+    }
+    #main1 #photo1 {
+        width: 70%;
+        margin: 0;
+    }
+    #main1 #text1 {
+        width: 70%;
+        padding: 54px;
+    }
+    #main3 {
+        flex-direction: column;
+    }
+    .w3-1 {
+        width: 100%;
+    }
+    #M {
+        margin: 54px 0;
+    }
+    #main4 {
+        height: max-content;
+        flex-direction: column;
+    }
+    #main4 #text4 {
+        width: 100%;
+        margin: 0;
+        padding: 54px;
+    }
+    #main4 #photo4 {
+        width: 90%;
+    }
+}
+#backimg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/front.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.box {
+    width: 10%;
+    height: 100vh;
+    background-color: whitesmoke;
+    animation-name: flip;animation-duration: 0.5s;
+    transform-origin: 100% 100%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    position: absolute;
+}
+#backimg .aa,#backimg .bb,#backimg .cc,#backimg .dd,#backimg .ee {
+    width: 10%;
+    height: 100vh;
+    background-color: whitesmoke;
+    animation-name: flip;animation-duration: 0.5s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+#backimg .aa {
+    animation-delay: 2s;
+}
+#backimg .bb {
+    animation-delay: 1.5s;
+    left: 10%;
+}
+#backimg .cc {
+    animation-delay: 1s;
+    left: 20%;
+}
+#backimg .dd {
+    animation-delay: 0.5s;
+    left: 30%;
+}
+#backimg .ee {
+    left: 40%;
+}
+#backimg .ff {
+    left: 50%;
+}
+#backimg .gg {
+    animation-delay: 0.5s;
+    left: 60%;
+}
+#backimg .hh {
+    animation-delay: 1s;
+    left: 70%;
+}
+#backimg .ii {
+    animation-delay: 1.5s;
+    left: 80%;
+}
+#backimg .jj {
+    animation-delay: 2s;
+    left: 90%;
+}
+
+@keyframes flip {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.front {
+    animation-name: end;animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 2.5s;
+}
+
+@keyframes end {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+        height: 0;
+    }
+}
+
+.show {
+    animation-name: show;animation-duration: 6s;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
