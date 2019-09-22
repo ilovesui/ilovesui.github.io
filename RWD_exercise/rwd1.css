@@ -12,7 +12,7 @@ body {
 #navbar {
     background-color: honeydew;
     width: 320px;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: inline-block;
 }
 #logo {
@@ -59,7 +59,7 @@ body {
 }
 #main {
     width: calc( 100% - 320px);
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-color: lavender;
     float: right;
     display: flex;
@@ -150,7 +150,14 @@ body {
 #main .center .photo3:hover #wbc2 {
     opacity: 0;
 }
-
+#footer {
+    background-color: lightcyan;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
 @media (max-width: 1280px) {
     #navbar {
         width: 230px;
@@ -257,7 +264,7 @@ body {
     }
     #main {
         width: 100%;
-        height: calc(100vh - 132px)
+        height: calc(100vh - 212px)
     }
     #main .center {
         width: calc(100% - 20px);
