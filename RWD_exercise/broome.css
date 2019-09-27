@@ -74,6 +74,7 @@ footer {
 }
 footer .container p {
     margin: 0;
-    line-height: 50px;
+    line-height: unset;
     text-align: center;
+    font-size: 10px;
 }
