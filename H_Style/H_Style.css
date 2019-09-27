@@ -76,8 +76,16 @@ p {
     background-image: url('./img/banner_lady.png');
 }
 #banner #scene .logo img {
+    height: 100px;
     top: 80vh;
     right: 20%;
+}
+@media(max-width:576px) {
+    #banner #scene .logo img {
+        height: 70px;
+        top: 80vh;
+        right: 20%;
+    }
 }
 
 /* navbar */
@@ -120,7 +128,7 @@ nav {
     z-index: -1;
 }
 #about .experience {
-    margin-top: 162px;
+    margin-top: 108px;
 }
 #about .future {
     margin-top: 54px;
@@ -309,6 +317,9 @@ nav {
 }
 #protfolio h1 {
     padding: 36px 0;
+}
+#protfolio>.row {
+    margin-bottom: 54px;
 }
 #protfolio .swiper-container {
     width: 100%;
