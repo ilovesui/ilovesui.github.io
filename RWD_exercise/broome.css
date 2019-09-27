@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 80%;
+        min-width: 1140px;
+        /* 因為1280*80%<1140 為避免RWD縮小又放大 所以我加了min-width */
+        margin: auto;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1800px;
+        margin: auto;
+    }
+}
+.navbar-brand {
+    padding: 5px 15px;
+    line-height: 40px;
+}
+section#banner {
+    margin-top: 50px;
+}
+section#banner .banner_swiper {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+section#banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+section#banner .banner_swiper .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+section#banner .banner_swiper .img .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.618);
+    display: flex;
+    align-items: center;
+}
+section#banner .banner_swiper .img .img_i {
+    width: 100%;
+    height: 61.8%;
+    background-size: cover;
+    background-position: center;
+}
+
+section#about .row .text {
+    padding: 0 15px;
+    width: 61.8%;
+}
+section#about .row .photo {
+    padding: 0 15px;
+    width: 38.2%;
+}
+
+@media (max-width:767px) {
+    section#about .row .text {
+        width: 100%;
+    }
+    section#about .row .photo {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: dodgerblue;
+    color: white;
+}
+footer .container p {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
