@@ -96,7 +96,7 @@ nav {
 
 /* contact btn */
 #contact {
-    top: 81px;
+    top: calc(100vh - 243px);
     font-size: 30px;  
 }
 #contact i {
@@ -341,5 +341,4 @@ footer {
 footer p {
     color: white;
     font-size: 12px;
-    line-height: 73px
 }
