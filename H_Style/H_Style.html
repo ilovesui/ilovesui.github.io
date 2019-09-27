@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H.Style</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+TC:300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./H_Style.css">
+
+</head>
+<body>
+    <section id="banner">
+        <div id="scene" class="banner_effect">
+            <div data-depth="0" class="layer">
+                <div class="bg_b banner_part"></div>
+            </div>
+            <div data-depth="0.1" class="layer">
+                <div class="banner_part banner_bg"></div>
+            </div>
+            <div data-depth="0.3" class="layer">
+                <div class="banner_part thicket_c"></div>
+            </div>
+            <div data-depth="0.35" class="layer">
+                <div class="banner_part thicket_l"></div>
+            </div>
+            <div data-depth="0.35" class="layer">
+                <div class="banner_part thicket_r"></div>
+            </div>
+            <div data-depth="0.5" class="layer">
+                <ul class="d-flex">
+                    <li>關於H.Style</li>
+                    <li>服務項目</li>
+                    <li>造型流程</li>
+                    <li>飾品櫥窗</li>
+                    <li>作品集</li>
+                    <li>聯絡資訊</li>
+                    <li>友情推薦</li>
+                </ul>
+            </div>
+            <div data-depth="0.5" class="layer">
+                <div class="banner_part lady"></div>
+            </div>
+            <div data-depth="0.8" class="layer">
+                <div class="logo position-relative">
+                    <img src="./img/logo.png" alt="H.Style" style="height: 100px" class="position-absolute">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand p-0" href="#">
+            <img src="./img/logo.png" alt="H.Style" style="height: 63px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-end flex-sm-row justify-content-md-around justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><p>關於H.Style</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service_items"><p>服務項目</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process"><p>預約流程</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jewelry"><p>飾品櫥窗</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#protfolio"><p>造型作品</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact" class="container sticky-top">
+        <a href="https://www.facebook.com/huang.hsinhui.1" target="_blank" style="text-decoration:none"><i class="fab fa-facebook-square float-right"></i></a>
+        <a href="https://www.instagram.com/hsinhui_makeup_artist/?hl=zh-tw" target="_blank" style="text-decoration:none"><i class="fab fa-instagram float-right mx-3"></i></a>
+    </section>
+
+    <section id="about" class="container position-relative">
+        <h1>關於H.Style</h1>  
+        <div class="row">
+            <div class="col-1">　</div>
+            <div class="col-lg-8 col-md-7 col-10">
+                <p>從前H小姐學的，並不相關於彩妝造型，<br>因順從了女人愛美的天性，走上了這條不歸路。</p>
+                <p>擁有了各種美妝知識，也要不斷磨練技術，<br>
+                更是定期抽空旅行，充實自我增進美的靈感。</p>
+                <p>讓就是喜歡特別、獨一無二的妳，在重要時刻成就精彩的美。</p>
+            </div>
+        </div>
+        <img src="./img/photo.jpg" alt="N小姐">
+        <div class="row justify-content-between align-items-center experience">
+            <div class="col-xl-3 col-md-4 col-5">               
+                <img src="./img/certificate.jpg" alt="證書" style="width: 100%; border-radius: 10px">
+            </div>
+            <div class="col-xl-8 col-7">
+                <p>證照資格<br>中華民國乙丙級美容證照、Shu Uemura A級彩妝師</p>
+                <p>經歷<br>佳麗寶櫃姐、Shu Uemura 的 Make-up artist</p>
+                <p>活動參與<br>萊雅活動造型、Shu Uemura VIP美容護膚活動、2019李玟演唱會造型團隊之一……等</p>
+            </div>
+        </div>
+        <div class="row justify-content-end align-items-center future">
+            <div class="col-md-6 col-7">
+                <p>未來展望</p>
+                <p>學習攝影中，希望未來能包辦造型＋寫真一條龍服務XD<br>瞧瞧如果想搞海外婚紗或造型，只要預約一個人就包辦了造型跟攝影，機票費用就只要負責一個人呢～<br>價格馬上甜了幾分，484很美好呢～</p>
+            </div>
+            <div class="col-sm-4 col-5">
+                <img src="./img/future.jpg" alt="H.Style未來目標" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+    
+    <section id="service_items" class="container">
+        <h1>服務項目</h1>
+        <div class="list row justify-content-center">
+            <div class="col-md-3 col-sm-5 col-6 cursor py-2">
+                <div class="list_img hover_shadow list_a" onclick="openModal();currentSlide(1)"></div>
+                <p class="text-center py-3
+                ">新娘秘書</p>
+            </div>
+            <div class="col-md-3 col-sm-5 col-6 cursor py-2">
+                <div class="list_img hover_shadow list_b" onclick="openModal();currentSlide(2)"></div>
+                <p class="text-center py-3
+                ">活動造型</p>
+            </div>
+            <div class="col-md-3 col-sm-5 col-6 cursor py-2">
+                <div class="list_img hover_shadow list_c" onclick="openModal();currentSlide(3)"></div>
+                <p class="text-center py-3
+                ">藝術創作</p>
+            </div>
+            <div class="col-md-3 col-sm-5 col-6 cursor py-2">
+                <div class="list_img hover_shadow list_d" onclick="openModal();currentSlide(4)"></div>
+                <p class="text-center py-3
+                ">保養課程</p>
+            </div>
+        </div>
+        <div id="list_group" class="modal">
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()"><i class="fas fa-times"></i></span>
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="list_img list_a"></div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="list_part">
+                                <h1 class="text-center">新娘秘書</h1>
+                                <p>儀式妝 - <br>單/雙儀式（1造型/2造型）</p>
+                                <p>宴客妝 - <br>文定/結婚（2造型/3造型）</p>
+                                <p>半日/全日新秘 - <br>儀式＋午宴/晚宴</p>
+                                <p>婚紗寫真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="list_img list_b" style="background-position: top"></div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="list_part">
+                                <h1 class="text-center">活動造型</h1>
+                                <p>各種活動</p>
+                                <p>Dating</p>
+                                <p>Party</p>
+                                <p>Cosplay<br>　<br>　<br>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="list_img list_c" style="background-position-y: 20%"></div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="list_part">
+                                <h1 class="text-center">藝術創作</h1>
+                                <p>寫真造型</p>
+                                <p>突發奇想</p>
+                                <p>互惠創作</p>
+                                <p>　<br>　<br>　<br>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="list_img list_d"></div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="list_part">
+                                <h1 class="text-center">保養課程</h1>
+                                <p>基礎保養</p>
+                                <p>深層護膚</p>
+                                <p>美白 / 保濕</p>
+                                <p>　<br>　<br>　<br>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left" style="color: rgb(23, 22, 49)"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right" style="color: rgb(23, 22, 49)"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="process" class="container">
+        <h1>預約流程</h1>
+        <p class="process_title">諮詢</p>
+        <div class="d-flex flex-wrap">
+            <p>分析臉型膚況</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>造型溝通</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>預約時段</p>
+        </div>
+        <p class="process_title">整體造型</p>
+        <div class="d-flex flex-wrap">
+            <p>妝前保養</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>完整彩妝</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>設計編髮</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>身體遮瑕/水粉</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>飾品搭配</p>
+        </div>
+    </section>
+
+    <section id="jewelry" class="d-flex flex-wrap align-items-end">
+        <div id="jewelry_swiper" class="swiper-container">
+                <!-- Additional required wrapper -->
+            <div id="jewelry_img" class="swiper-wrapper">
+
+            </div>
+            
+            <div id="jewelry_page" class="swiper-pagination"></div>
+        
+            <div id="jewelry_prev" class="swiper-button-prev"></div>
+            <div id="jewelry_next" class="swiper-button-next"></div>
+        </div>
+        <h1 class="px-4">飾品櫥窗</h1>
+    </section>
+
+    <section id="protfolio" class="container">
+        <div class="row align-items-end justify-content-end">
+            <div class="col">
+                <h1 class="text-md-right text-left">婚紗系列</h1>
+            </div>
+            <div class="col-lg-6 col-md-8">
+                <div id="wedding_swiper" class="swiper-container">
+                    <div id="wedding_img" class="swiper-wrapper">
+                    </div>
+                    
+                    <div id="wedding_page" class="swiper-pagination"></div>
+                
+                    <div id="wedding_prev" class="swiper-button-prev"></div>
+                    <div id="wedding_next" class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-lg-6 col-md-8 order-md-0 order-1">
+                <div id="creation_swiper" class="swiper-container">
+                    <div id="creation_img" class="swiper-wrapper">
+                    </div>
+                    
+                    <div id="creation_page" class="swiper-pagination"></div>
+                
+                    <div id="creation_prev" class="swiper-button-prev"></div>
+                    <div id="creation_next" class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h1>造型創作</h1>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col p-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="H.Style" style="height: 63px">
+                    </a>
+                </div>
+                <div class="col p-0">
+                    <p>Copyright © 2019 by Sui</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+
+    <script>
+        function openModal() {
+            document.getElementById("list_group").style.display = "block";
+        }  
+        function closeModal() {
+            document.getElementById("list_group").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+    <script>
+        var jewelry = document.querySelector("#jewelry_img");
+        var jewelry_img_group = [
+            './img/jewelry_1.JPG','./img/jewelry_2.JPG','./img/jewelry_3.JPG','./img/jewelry_4.JPG','./img/jewelry_5.JPG','./img/jewelry_6.JPG','./img/jewelry_7.JPG','./img/jewelry_8.JPG'
+        ]
+        for (let i = 0; i < jewelry_img_group.length; i++) {
+            const jewelry_img = jewelry_img_group[i];
+            
+            jewelry.innerHTML += `<div class="swiper-slide">
+                    <img src="${jewelry_img}" alt="飾品">
+                </div>`
+        }
+
+        var jewelry_Swiper = new Swiper ('#jewelry_swiper', {
+            slidesPerView: 6,
+            spaceBetween: 15,
+            loop: true,
+        
+            pagination: {
+                el: '#jewelry_page',
+                dynamicBullets: true,
+            },        
+            navigation: {
+                nextEl: '#jewelry_next',
+                prevEl: '#jewelry_prev',
+            }
+        })
+    </script>
+
+    <script>
+        var wedding = document.querySelector("#wedding_img");
+        var wedding_img_group = [
+            './img/wedding_2.JPG','./img/wedding_3.JPG','./img/wedding_4.JPG','./img/wedding_5.JPG','./img/wedding_6.JPG','./img/wedding_7.JPG','./img/wedding_8.JPG','./img/wedding_9.JPG','./img/wedding_10.JPG','./img/wedding_11.JPG','./img/wedding_12.JPG','./img/wedding_13.JPG','./img/wedding_14.JPG','./img/wedding_15.JPG','./img/wedding_16.JPG','./img/wedding_17.JPG','./img/wedding_18.JPG','./img/wedding_19.JPG','./img/wedding_20.JPG','./img/wedding_21.JPG','./img/wedding_22.JPG','./img/wedding_23.JPG','./img/wedding_24.JPG','./img/wedding_25.JPG','./img/wedding_26.JPG','./img/wedding_27.JPG','./img/wedding_28.JPG'
+        ]
+        for (let i = 0; i < wedding_img_group.length; i++) {
+            const wedding_img = wedding_img_group[i];
+            
+            wedding.innerHTML += `<div class="swiper-slide img" style="background-image: url('${wedding_img}')"></div>`
+        }
+        var wedding_Swiper = new Swiper ('#wedding_swiper', {
+            spaceBetween: 15,
+            loop: true,
+        
+            pagination: {
+                el: '#wedding_page',
+                dynamicBullets: true,
+            },        
+            navigation: {
+                nextEl: '#wedding_next',
+                prevEl: '#wedding_prev',
+            }
+        })
+
+        var creation = document.querySelector("#creation_img");
+        var creation_img_group = [
+            './img/creation_2.JPG','./img/creation_3.JPG','./img/creation_4.JPG','./img/creation_5.JPG','./img/creation_6.JPG','./img/creation_7.JPG','./img/creation_8.JPG','./img/creation_9.JPG','./img/creation_10.JPG','./img/creation_11.JPG','./img/creation_12.JPG','./img/creation_13.JPG'
+        ]
+        for (let i = 0; i < creation_img_group.length; i++) {
+            const creation_img = creation_img_group[i];
+            
+            creation.innerHTML += `<div class="swiper-slide img" style="background-image: url('${creation_img}')"></div>`
+        }
+        var creation_Swiper = new Swiper ('#creation_swiper', {
+            spaceBetween: 15,
+            loop: true,
+        
+            pagination: {
+                el: '#creation_page',
+                dynamicBullets: true,
+            },        
+            navigation: {
+                nextEl: '#creation_next',
+                prevEl: '#creation_prev',
+            }
+        })
+        
+    </script>
+
+</body>
+</html>
