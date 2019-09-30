@@ -43,20 +43,64 @@ p {
     top: -10%;
     left: -7%;
 }
-#banner #scene ul {
-    list-style: none;
-}
 #banner #scene .layer {
     width: 100%;
     height: 100%;
 }
+#banner ul {
+    list-style: none;
+    bottom: 90vh;
+}
+#banner ul li {
+    transform: rotate(15deg);
+    animation-name: sway;
+    transform-origin: 20% 0%;
+    animation-iteration-count: infinite;
+}
+#banner ul li img {
+    height: 9vh;
+}
+#banner ul li.about {   
+    left: 0;
+    top: 0;
+    animation-duration: 3s;
+}
+#banner ul li.service {
+    left: 0;
+    top: 13vh;  
+    animation-duration: 4.5s;
+}
+#banner ul li.process {
+    left: 0;
+    top: 26vh; 
+    animation-duration: 3.5s;  
+}
+#banner ul li.jewelry {
+    left: 0;
+    top: 39vh; 
+    animation-duration: 4s;  
+}
+#banner ul li.protfolio {
+    left: 0;
+    top: 52vh; 
+    animation-duration: 5s;  
+}
+@keyframes sway {
+    0%{
+        transform: rotate(15deg)
+    }50%{
+        transform: rotate(35deg)
+    }100%{
+        transform: rotate(15deg)
+    }
+}
+
 #banner #scene .bg_b {
     background-color: black;
 }
 #banner #scene .banner_part {
     width: 100%;
     height: 100%;
-    
     background-size: cover;
     background-position: center;
 }
@@ -80,10 +124,57 @@ p {
     top: 80vh;
     right: 20%;
 }
-@media(max-width:576px) {
+@media(max-width:991px) {
+    #banner ul li img {
+        height: 8vh;
+    }
+    #banner ul li.about {
+        top: 5vh;
+    }
+    #banner ul li.service {
+        top: 16vh;
+    }
+    #banner ul li.process {
+        top: 27vh;  
+    }
+    #banner ul li.jewelry {
+        top: 38vh; 
+    }
+    #banner ul li.protfolio {
+        top: 49vh;   
+    }
     #banner #scene .logo img {
-        height: 70px;
+        height: 85px;
         top: 80vh;
+        right: 20%;
+    }
+}
+@media(max-width:576px) {
+    #banner ul li img {
+        width: 25vw;
+    }
+    #banner ul li.about {
+        top: 20vh;
+    }
+    #banner ul li.service {
+        left: 20%;
+        top: 28vh;
+    }
+    #banner ul li.process {
+        left: 40%;
+        top: 26vh;  
+    }
+    #banner ul li.jewelry {
+        left: 55%;
+        top: 24vh; 
+    }
+    #banner ul li.protfolio {
+        left: 75%;
+        top: 30vh;   
+    }
+    #banner #scene .logo img {
+        height: 63px;
+        top: 90vh;
         right: 20%;
     }
 }
