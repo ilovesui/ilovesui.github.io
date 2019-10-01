@@ -49,12 +49,12 @@ p {
 }
 #banner ul {
     list-style: none;
-    bottom: 121vh;
+    bottom: 122vh;
 }
 #banner ul li {
     transform: rotate(15deg);
     animation-name: sway;
-    transform-origin: 20% 0%;
+    transform-origin: 0 0;
     animation-iteration-count: infinite;
 }
 #banner ul li img {
