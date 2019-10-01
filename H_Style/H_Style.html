@@ -134,6 +134,12 @@
             </div>
         </div>
     </section>
+
+    <section id="special" class="d-flex flex-lg-row flex-column justify-content-around">
+        <div class="parallax-window special_1" data-parallax="scroll" data-speed="0.4" data-image-src="./img/special_1.jpg"></div>
+        <div class="parallax-window special_2" data-parallax="scroll" data-speed="0.6"  data-image-src="./img/special_2.jpg"></div>
+        <div class="parallax-window special_3" data-parallax="scroll" data-speed="0.3"  data-image-src="./img/special_3.jpg"></div>
+    </section>
     
     <section id="service_items" class="container">
         <h1>服務項目</h1>
@@ -232,50 +238,11 @@
             </div>
         </div>
     </section>
-    
-    <section id="process" class="container">
-        <h1>預約流程</h1>
-        <p class="process_title">諮詢</p>
-        <div class="d-flex flex-wrap">
-            <p>分析臉型膚況</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>造型溝通</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>預約時段</p>
-        </div>
-        <p class="process_title">整體造型</p>
-        <div class="d-flex flex-wrap">
-            <p>妝前保養</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>完整彩妝</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>設計編髮</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>身體遮瑕/水粉</p>
-            <i class="fas fa-angle-double-right"></i>
-            <p>飾品搭配</p>
-        </div>
-    </section>
-
-    <section id="jewelry" class="d-flex flex-wrap align-items-end">
-        <div id="jewelry_swiper" class="swiper-container">
-                <!-- Additional required wrapper -->
-            <div id="jewelry_img" class="swiper-wrapper">
-
-            </div>
-            
-            <div id="jewelry_page" class="swiper-pagination"></div>
-        
-            <div id="jewelry_prev" class="swiper-button-prev"></div>
-            <div id="jewelry_next" class="swiper-button-next"></div>
-        </div>
-        <h1 class="px-4">飾品櫥窗</h1>
-    </section>
 
     <section id="protfolio" class="container">
         <div class="row align-items-end justify-content-end">
             <div class="col">
-                <h1 class="text-md-right text-left">婚紗系列</h1>
+                <p class="text-md-right text-left">婚紗系列</p>
             </div>
             <div class="col-lg-6 col-md-8">
                 <div id="wedding_swiper" class="swiper-container">
@@ -302,10 +269,51 @@
                 </div>
             </div>
             <div class="col">
-                <h1>造型創作</h1>
+                <p>造型創作</p>
             </div>
         </div>
     </section>
+
+    <section id="jewelry" class="d-flex flex-wrap align-items-end">
+        <div id="jewelry_swiper" class="swiper-container">
+                <!-- Additional required wrapper -->
+            <div id="jewelry_img" class="swiper-wrapper">
+
+            </div>
+            
+            <div id="jewelry_page" class="swiper-pagination"></div>
+        
+            <div id="jewelry_prev" class="swiper-button-prev"></div>
+            <div id="jewelry_next" class="swiper-button-next"></div>
+        </div>
+        <h1 class="px-4">飾品櫥窗</h1>
+    </section>
+
+    <section id="process" class="container">
+        <h1>預約流程</h1>
+        <p class="process_title">諮詢</p>
+        <div class="d-flex flex-wrap">
+            <p>分析臉型膚況</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>造型溝通</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>預約時段</p>
+        </div>
+        <p class="process_title">整體造型</p>
+        <div class="d-flex flex-wrap">
+            <p>妝前保養</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>完整彩妝</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>設計編髮</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>身體遮瑕/水粉</p>
+            <i class="fas fa-angle-double-right"></i>
+            <p>飾品搭配</p>
+        </div>
+    </section>
+
+    <section id="endding_img"></section>
 
     <footer>
         <div class="container">
@@ -336,6 +344,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <script>
         var scene = document.getElementById('scene');

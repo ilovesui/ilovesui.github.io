@@ -49,7 +49,7 @@ p {
 }
 #banner ul {
     list-style: none;
-    bottom: 90vh;
+    bottom: 121vh;
 }
 #banner ul li {
     transform: rotate(15deg);
@@ -62,27 +62,27 @@ p {
 }
 #banner ul li.about {   
     left: 0;
-    top: 0;
+    top: 32vh;
     animation-duration: 3s;
 }
 #banner ul li.service {
     left: 0;
-    top: 13vh;  
+    top: 45vh;  
     animation-duration: 4.5s;
 }
 #banner ul li.process {
     left: 0;
-    top: 26vh; 
+    top: 58vh; 
     animation-duration: 3.5s;  
 }
 #banner ul li.jewelry {
     left: 0;
-    top: 39vh; 
+    top: 71vh; 
     animation-duration: 4s;  
 }
 #banner ul li.protfolio {
     left: 0;
-    top: 52vh; 
+    top: 84vh; 
     animation-duration: 5s;  
 }
 @keyframes sway {
@@ -129,23 +129,22 @@ p {
         height: 8vh;
     }
     #banner ul li.about {
-        top: 5vh;
+        top: 37vh;
     }
     #banner ul li.service {
-        top: 16vh;
+        top: 48vh;
     }
     #banner ul li.process {
-        top: 27vh;  
+        top: 59vh;  
     }
     #banner ul li.jewelry {
-        top: 38vh; 
+        top: 70vh; 
     }
     #banner ul li.protfolio {
-        top: 49vh;   
+        top: 81vh;   
     }
     #banner #scene .logo img {
         height: 85px;
-        top: 80vh;
         right: 20%;
     }
 }
@@ -154,27 +153,27 @@ p {
         width: 25vw;
     }
     #banner ul li.about {
-        top: 20vh;
+        top: 0;
     }
     #banner ul li.service {
         left: 20%;
-        top: 28vh;
+        top: 0;
     }
     #banner ul li.process {
         left: 40%;
-        top: 26vh;  
+        top: 0;  
     }
     #banner ul li.jewelry {
         left: 55%;
-        top: 24vh; 
+        top: 0; 
     }
     #banner ul li.protfolio {
         left: 75%;
-        top: 30vh;   
+        top: 0;   
     }
     #banner #scene .logo img {
         height: 63px;
-        top: 90vh;
+        top: 85vh;
         right: 20%;
     }
 }
@@ -242,6 +241,62 @@ nav {
     }
     #about .experience {
         margin-top: 36px;
+    }
+}
+
+/* special */
+#special {
+    padding: 81px 15px 0 15px;
+}
+.special_1 {
+    width: calc(33% - 20px);
+    height: 300px;
+}
+.special_2 {
+    width: calc(33% - 20px);
+    height: 300px;
+    margin-top: 54px;
+}
+.special_3 {
+    width: calc(33% - 20px);
+    height: 300px;
+    margin-top: 108px;
+}
+@media(max-width:991px) {
+    .special_1 {
+        width: 40%;
+    }
+    .special_2 {
+        width: 40%;
+        margin-top: 15px;
+        align-self: center;
+    }
+    .special_3 {
+        width: 40%;
+        margin-top: 15px;
+        align-self: flex-end;
+    }
+}
+@media(max-width:767px) {
+    .special_1 {
+        height: 200px;
+    }
+    .special_2 {
+        height: 200px;
+    }
+    .special_3 {
+        height: 200px;
+    }
+}
+@media(max-width:576px) {
+    .special_1 {
+        width: 50%;
+    }
+    .special_2 {
+        width: 50%;
+    }
+    .special_3 {
+        width: 50%;
     }
 }
 
@@ -406,7 +461,7 @@ nav {
 #protfolio {
     padding-top: 81px;
 }
-#protfolio h1 {
+#protfolio p {
     padding: 36px 0;
 }
 #protfolio>.row {
@@ -424,6 +479,13 @@ nav {
     background-repeat: no-repeat;
 }
 
+#endding_img {
+    background-image: url('./img/work_1.jpg');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position-y: 30%;
+}
 footer {
     background-color: rgb(23, 22, 49);
     padding: 8px;
